@@ -3,7 +3,6 @@
     padding: 0;
     border:0 none;
 }
-
 .header {
     background: url("../images/header_bg.png");
     background-size: contain;
@@ -26,9 +25,13 @@
     margin-bottom: 65px;
     overflow: hidden;
 }
-
 .header .navbar-inverse .navbar-nav > li > a {
     color: #ffffff;
+}
+.header .navbar-inverse .navbar-nav > li > a:hover,
+.header .navbar-inverse .navbar-nav > .active > a {
+    color: #a1a1a1;
+    background: none;
 }
 @media (max-width: 768px) {
     .header .navbar-inverse .navbar-nav > .active > a,
@@ -36,13 +39,23 @@
     .header .navbar-inverse .navbar-nav > li > a:focus  {
         background-color: #080808;
         border-bottom: 1px solid #191919;
-
+        color: inherit;
     }
+}
+.header .navbar-inverse .navbar-nav li:last-child a {
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+}
+.header .navbar-inverse .navbar-nav li:last-child a:hover,
+.header .navbar-inverse .navbar-nav li:last-child a:focus  {
+    color: #ffffff;
+    background-color: #c9302c;
+    border: none;
 }
 @media (max-width: 768px) {
     .header .navbar-inverse {
         margin-bottom: 0;
-
     }
 }
 @media (max-width: 768px) {
@@ -57,7 +70,6 @@
     .header .navbar-brand {
         padding: 3px 0;
     }
-
     .header .navbar-brand > img {
         width: 100px;
     }
@@ -67,15 +79,13 @@
     border: none;
 }
 .btn-warning {
-    background: #ec9e73;
-}
+     background: #ec9e73;
+ }
 .btn-warning:hover {
     background: #b7785c;
 }
  li.btn.btn-danger {
-    padding: 0 2px;
-    background: #ff5e70;
-
+     padding: 0 2px;
 }
  .option {
      background: #ffffff;
@@ -90,7 +100,7 @@
  }
 .header .navbar-nav > li > a {
     padding: 10px 20px;
-    border-bottom: 1px solid #080808;
+    /*border-bottom: 1px solid #080808;*/
 }
 .banner_text {
     padding-top: 128px;
@@ -118,12 +128,10 @@
 img.phone {
     max-width: 100%;
 }
-
 .about {
     padding-top: 75px;
     padding-bottom: 125px;
 }
-
 .about p {
     color: #938b93;
     padding-bottom: 25px;
@@ -147,7 +155,6 @@ img.phone {
         text-align: left;
     }
 }
-
 @media (max-width: 992px) {
     .social_icon {
         margin-bottom: 40px;
@@ -222,7 +229,6 @@ img.phone {
 .grid-color-darkgreen {
     background: #006645;
 }
-
 .grid-color-lightred{
     background: #ffa8a9;
 }
@@ -241,7 +247,6 @@ img.phone {
 .grid-color-darkblue {
     background: #007d87;
 }
-
 .price-col1 .title{
     padding: 17px 0 42px;
 }
@@ -253,7 +258,6 @@ img.phone {
 }
 .btn-success:hover {
     background: #166549;
-
 }
 .btn-info:hover {
     background: #008491;
@@ -293,7 +297,6 @@ img.phone {
         font-size: 16px;
     }
 }
-
 .contact .input-group {
     width: 100%;
 }
